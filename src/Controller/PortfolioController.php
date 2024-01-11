@@ -15,4 +15,11 @@ class PortfolioController extends AbstractController
             'controller_name' => 'PortfolioController',
         ]);
     }
+	#[Route('/page2', name: 'app_page2')]
+    public function page2(): Response
+    {
+        return $this->render('portfolio/page2.html.twig', [
+            'controller_name' => 'page2',
+        ]);
+    }
 }
